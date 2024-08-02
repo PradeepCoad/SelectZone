@@ -1,0 +1,164 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/*Drag and Drop region*/
+
+.drop-area {
+    cursor: pointer;
+    border: 2px dashed #9b2ddb;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.image-preview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+    .image-preview .file-item {
+        position: relative;
+        text-align: center;
+        margin: 10px;
+    }
+
+.file-info {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    color: #9b2ddb;
+    padding: 5px;
+    opacity: 0%;
+    z-index: 1;
+    transition: 0.5s;
+    display: block;
+}
+
+.file-item:hover img {
+    filter: blur(3px);
+}
+
+.file-item:hover i {
+    filter: blur(3px);
+}
+
+.file-item:hover .file-info {
+    opacity: 100%;
+}
+
+.image-preview img {
+    display: block;
+    max-width: 230px;
+    max-height: 115px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    margin: 0 10px;
+}
+
+.image-preview .remove-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #9b2ddb;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.drop-error-message {
+    color: #9b2ddb;
+    font-weight: bold;
+}
+
+.file-input {
+    display: none;
+}
+
+/*FilePreview area
+*/
+
+.preview-area {
+    cursor: pointer;
+    border: 2px dashed #9b2ddb;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.file-preview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.file-preview .file-item {
+    position: relative;
+    text-align: center;
+    margin: 10px;
+}
+
+
+.file-preview img {
+    display: block;
+    max-width: 230px;
+    max-height: 115px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    margin: 0 10px;
+}
+
+.file-preview .remove-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #9b2ddb;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
